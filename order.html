@@ -1,0 +1,163 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Order</title>
+    <meta name="author" content="Minh Hoang Nguyen - 103295032" />  <!-- Minh Hoang Nguyen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Montserrat|Open+Sans|Raleway|Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:200|Lato:300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<!-- Order Page -->
+<body>
+    <header>
+        <nav>   <!-- Navigation Bar -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="order.html" class="active">Order</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="false"></i></div>
+        <div class="logo">
+            <h1>Italian Pizza 4P's</h1>
+        </div>
+    </header>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('nav');
+            menuToggle.addEventListener('click', () => {
+            if (nav.className != 'active') { nav.className = 'active'; }
+            else { nav.className = ''; }
+            });
+    </script>
+    <section class="order">
+        
+        <div class="container1">
+            
+            <h1>Ordering Pizza</h1>
+        </div>
+
+        <div class="order">
+            <form id="regform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php">
+
+                <h1>Customer Information</h1>
+
+                <p>Email Address</p>
+                <input id="email" type="email" name="email" placeholder="mhoangnguyen2211@gmail.com" />
+
+                <p>Phone Number</p>
+                <input id="phone" type="text" name="phone" placeholder="0357251976" />
+            
+            </br>
+            </br>
+                <div id="payment-form">
+                    <h1>Payment Option</h1>
+                    
+                    <p>Card Type</p>
+
+                    <a onClick="creditcard_3()" class="cbutton" id="Adigits"><img src="images/amex.jpg" height="90px"
+                        width="160px">
+                    </a>
+                    
+                    <a onClick="creditcard_2()" class="cbutton" id="Mdigits"><img src="images/mastercard.jpg"
+                            height="90px" width="160px">
+                    </a>
+
+                    <a onClick="creditcard_1()" class="cbutton" id="Vdigits"><img src="images/visa.jpg" height="90px"
+                        width="160px">
+                    </a>
+
+                    <p>Owner</p>
+                    <input id="full_name" type="text" name="full_name" placeholder="Minh Hoang Nguyen">
+
+                    
+                    <p>Credit Card</p>
+                    <input id="cardno" type="text" name="cardno" placeholder="0000 0000 0000 0000">
+
+                    <br />
+                    <p>CVV/CVC</p>
+                    <input id="cvv" type="text" name="cvv/cvc" placeholder="000" />
+                    
+                    <p>Expiry</p>
+                    <select name="ccmon" id="ccmon">
+                        <option value="01">January</option>
+                        <option value="02">February </option>
+                        <option value="03">March</option>
+                        <option value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <select name="ccyear" id="ccyear">
+                        <option value="21"> 2021</option>
+                        <option value="22"> 2022</option>
+                        <option value="23"> 2023</option>
+                        <option value="24"> 2024</option>
+                        <option value="25"> 2025</option>
+                        <option value="26"> 2026</option>
+                    </select>
+                </div>
+
+                <div id="delivery-form">
+                </br>
+                    <h1>Address to Deliver</h1>
+
+                    <p>Address</p>
+                    <input id="delivery_address" type="text" name="delivery_address" placeholder="Hoang Hoa Tham, Tay Ho, Hanoi" />
+
+                    <p>PostCode</p>
+                    <input id="delivery_postcode" type="text" name="delivery_postcode" placeholder="124600" />
+
+                </div>
+
+            </br>
+            </br>
+                <h1>Pizza Order</h1>
+                    <br />
+                <textarea name="pizza_order" id="pizza_order" placeholder="
+        + Major Crush Pizza - 2 Big Size
+        + Romantic Chrismas - 2 Normal Size
+        + Viva Verde - 1 Normal Size
+        + Classic Original - 1 Big Size (Special Type)" 
+                ></textarea>
+            </br>
+        </br>
+    </br>
+
+                <div class="submit">
+                    <button class="button1" type="submit" value="Submit Order">Submit Order</button>
+                    <button class="button2" type="reset" value="Reset">Reset</button>
+                </div>
+                
+        </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="contacts">
+            <p>© 2021 Italian Pizza 4P's</p>
+
+        </div>
+        <div class="soc-media">
+            <p>Via Bosco di Capodimonte, 1, 80131 Napoli NA, Italy</p>
+        </div>
+        <div class="copyright">
+            <p>Contact us by <a href="mailto:name@mail.com" style="color:white">name@mail.com</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

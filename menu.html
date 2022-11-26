@@ -1,0 +1,116 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Menu</title>
+    <meta name="author" content="Minh Hoang Nguyen - 103295032" />  <!-- Minh Hoang Nguyen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Montserrat|Open+Sans|Raleway|Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:200|Lato:300&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+</head>
+<!-- Menu Page -->
+<body>
+    <header>
+        <nav>   <!-- Navigation Bar -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html"  class="active">Menu</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="false"></i></div>
+        <div class="logo">
+            <h1>Italian Pizza 4P's</h1>
+        </div>
+    </header>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        menuToggle.addEventListener('click', () => {
+            if (nav.className != 'active') { nav.className = 'active'; }
+            else { nav.className = ''; }
+        });
+    </script>
+        <div class="container3">
+            <h1 class="menu-int">4P's Menu</h1>
+        </div>
+        <div class="menu-type">
+            <h1>Best Seller</h1>
+        </div>
+    <section class="menu">
+        <div class="pizza1">
+            <img src="images/pizzaspecial1.png" alt="logo">
+            <p>Major Crush</p>
+            <p>Regular: 425.000đ/ Large: 475.000đ</p>
+        </div>
+        <div class="pizza2">
+            <img src="images/pizzaspecial2.png" alt="logo">
+            <p>Romantic Chrismas</p>
+            <p>Regular: 400.000đ/ Large: 450.000đ</p>
+        </div>
+        <div class="pizza3">
+            <img src="images/pizzaspecial3.png" alt="logo">
+            <p>Viva Verde</p>
+            <p>Regular: 450.000đ/ Large: 499.000đ</p>
+        </div>
+    </section>
+    <hr>
+    <div class="menu-type1">
+        <h1>Za'</h1>
+    </div>
+    <section class="menu">
+        <div class="pizza1">
+            <img src="images/pizzatype1.png" alt="logo">
+            <p>Blanca</p>
+            <p>Regular: 235.000đ/ Large: 285.000đ</p>
+        </div>
+        <div class="pizza2">
+            <img src="images/pizzatype2.png" alt="logo">
+            <p>Marinana</p>
+            <p>Regular: 250.000đ/ Large: 300.000đ</p>
+        </div>
+        <div class="pizza3">
+            <img src="images/pizzatype3.png" alt="logo">
+            <p>Classic Original</p>
+            <p>Regular: 225.000đ/ Large: 275.000đ</p>
+        </div>
+    </section>
+    <br>
+    <section class="menu">
+        <div class="pizza1">
+            <img src="images/pizzatype4.png" alt="logo">
+            <p>Margherita</p>
+            <p>Regular: 255.000đ/ Large: 305.000đ</p>
+        </div>
+        <div class="pizza2">
+            <img src="images/pizzatype5.png" alt="logo">
+            <p>Tight Socks</p>
+            <p>Regular: 275.000đ/ Large: 325.000đ</p>
+        </div>
+        <div class="pizza3">
+            <img src="images/pizzatype6.png" alt="logo">
+            <p>New Haven Clam Pie</p>
+            <p>Regular: 350.000đ/ Large: 400.000đ</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contacts">
+            <p>© 2021 Italian Pizza 4P's</p>
+
+        </div>
+        <div class="soc-media">
+            <p>Via Bosco di Capodimonte, 1, 80131 Napoli NA, Italy</p>
+        </div>
+        <div class="copyright">
+            <p>Contact us by <a href="mailto:name@mail.com" style="color:white">name@mail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>

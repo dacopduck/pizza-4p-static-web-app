@@ -1,0 +1,75 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <meta name="author" content="Minh Hoang Nguyen - 103295032" />  <!-- Minh Hoang Nguyen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Montserrat|Open+Sans|Raleway|Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:200|Lato:300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<!-- Register Page -->
+<body>
+    <header>
+        <nav>   <!-- Navigation Bar -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="register.html" class="active">Register</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="false"></i></div>
+        <div class="logo">
+            <h1>Italian Pizza 4P's</h1>
+        </div>
+    </header>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        menuToggle.addEventListener('click', () => {
+            if (nav.className != 'active') { nav.className = 'active'; }
+            else { nav.className = ''; }
+        });
+    </script>
+    <div class="container1">
+    </br>
+        <h1>Register an account</h1>
+    </div>
+</br>
+</br>
+    <div class="register">
+        <form method="post" id="regform2" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+            <label><input type="text" name="full_name" id="full_name" placeholder="Full Name"></label>
+            <label><input type="text" name="username" id="username" placeholder="Username"></label><br />
+            <label><input type="password" name="pwd1" id="pwd1" placeholder="Password"></label>
+            <label><input type="password" name="pwd2" id="pwd2" placeholder="Re-type Password"></label><br />
+            <label><input type="email" name="email" id="email" placeholder="Email"></label>
+
+            <div class="buttons">
+                <button type="submit" value="Submit">Submit</button>
+                <button type="reset" value="Reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+
+    <footer>
+        <div class="contacts">
+            <p>© 2021 Italian Pizza 4P's</p>
+        </div>
+        <div class="soc-media">
+            <p>Via Bosco di Capodimonte, 1, 80131 Napoli NA, Italy</p>
+        </div>
+        <div class="copyright">
+            <p>Contact us by <a href="mailto:name@mail.com" style="color:white">name@mail.com</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

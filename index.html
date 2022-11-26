@@ -1,0 +1,104 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+    <meta name="author" content="Minh Hoang Nguyen - 103295032" />  <!-- Minh Hoang Nguyen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Montserrat|Open+Sans|Raleway|Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:200|Lato:300&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp_aGYe-zgHzK3h2zVk6LS38l9h8JCVJo&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+</head>
+<!-- Home Page -->
+<body>
+    <div class="background">
+        <header>
+            <nav>   <!-- Navigation Bar -->
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="order.html">Order</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="false"></i></div>
+            <div class="logo">
+                <h1>Italian Pizza 4P's</h1>
+            </div>
+        </header>
+        <script>
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('nav');
+            menuToggle.addEventListener('click', () => {
+            if (nav.className != 'active') { nav.className = 'active'; }
+            else { nav.className = ''; }
+            });
+        </script>
+        <div class="slogan">
+            <h2>You can't buy happiness.<br>But you can buy pizza,<br>and that's kind of the same thing.</h2>
+        </div>
+
+    </div>
+    <main>
+        <section class="about">
+            <div class="intro-text">
+                <h1>Italian Pizza <span style="color:gray">4P'S</span></h1>
+                <p>With the quotes "You can't buy happiness. But you can buy pizza, and that's kind of the same thing". Pizzeria Bruno want to
+                    deliver the happy to our customer's day life along with the fresh and healthy food. Happyiness is the main focus of us when 
+                    making the pizza, and we desire our customer can feel and get it.
+                </p>
+            </div>
+            <div class="intro-img">
+                <iframe width="525px" height="325px" src="https://www.youtube.com/embed/5lqPyLu12aY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <hr>
+        <section class="org">
+            <div class="founder">
+                <img src="images/PerterLutz.png" alt="logo" height="380" width="360">
+            </div>
+            <div class="org-text">
+                <h1>History Of <span style="color:gray">4P'S</span></h1>
+                <p>Peter Lutz grew up in Detroit and still has an affinity for the style of pizza his home city has popularized. 
+                    He likes New York-style pizza and other varieties as well. Pizza comes in many styles, and Lutz isn’t one 
+                    of those snobs who thinks his preferred style is the only kind of pizza worth eating. Having said that, 
+                    there’s only one pizza that he has ever fallen in love with so deeply that it became an obsession-turned-profession.<br><br>
+                    Nowaday, Pizzeria Bruno carries both domestic and Italian wines, as well as a few from South America (Argentina and Chile) 
+                    and New Zealand. But, for the most part, the offerings hail from Italy.
+                </p>
+            </div>
+        </section>
+        <hr>
+
+
+        <div class="container2">
+            <h1 class="locate-int">Google Map</h1>
+        </div>
+        <section class="location">
+            <div id="map"></div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="contacts">
+            <p>© 2021 Italian Pizza 4P's</p>
+
+        </div>
+        <div class="soc-media">
+            <p>Via Bosco di Capodimonte, 1, 80131 Napoli NA, Italy</p>
+        </div>
+        <div class="copyright">
+            <p>Contact us by <a href="mailto:name@mail.com" style="color:white">name@mail.com</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
